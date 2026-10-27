@@ -1,1 +1,39 @@
-   <!-- Write your code here -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centered Box</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #box {
+        width: 150px;
+        height: 150px;
+        background: #f08080;
+        cursor: pointer;
+        transition: 0.45s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+    <script>
+      const b = document.getElementById("box");
+      let s = 1;
+      b.onclick = () => {
+        b.style.height = "300px";
+        b.style.width = "300px";
+      };
+      b.ondblclick = () => {
+        b.style.height = "150px";
+        b.style.width = "150px";
+      };
+    </script>
+  </body>
+</html>
